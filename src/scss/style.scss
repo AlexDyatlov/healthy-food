@@ -6,8 +6,68 @@
 //                                                    START CODE
 //
 //-----------------------------------------------------------------------------------------------------------
-
-
+.header__top{
+  height: 75px;
+  background-color: #111111;
+}
+.header__top-inner{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center;
+  height: 75px;
+}
+.header__box{
+  a{
+    color: #fff;
+  }
+  
+}
+.header__menu-inner{
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
+.menu__list{
+  li{
+    display: inline-block;
+    & + li{
+      margin-left: 45px;
+    }
+  }
+  a{
+    color: #222222;
+  }
+}
+.search__inner-form{
+  margin-right: 85px;
+  position: relative;
+  form{
+    max-width: 149px;
+    input{
+      display: block;
+      width: 100%;
+      border-radius: 4px;
+      height: 36px;
+      border: 1px solid #eaeaea;
+      font-size: 14px;
+      color: #333333;
+      padding-left: 28px;
+      padding-right: 25px;
+        &::placeholder{
+          color: #333333;
+      }
+    }
+    button{
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      top: 7px;
+      left: 4px;
+    }
+  }
+}
 
 
 
