@@ -5,7 +5,27 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-
+  <section class="search" style="background-image: url(img/search-bg.jpg);">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__inner-title">
+          Домашняя еда на расстоянии одного клика
+        </div>
+        <div class="search__inner-form">
+          <form>
+            <input type="text" placeholder="Введите улицу, город, индекс" required>
+              <button type="submit">
+                <img src="img/icons/marker.svg" alt="">
+                <!-- <img src="img/icons/index.svg" alt=""> -->
+              </button>
+          </form>
+        </div>
+        <div class="search__inner-text">
+          Введите ваше местоположение для просмотра меню
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')

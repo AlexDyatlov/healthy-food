@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&family=Roboto:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>DesignCoz</title>
@@ -59,7 +59,7 @@
               </a>
             </li>
           </ul>
-          <div class="search__inner-form">
+          <div class="header__form">
             <form>
               <input type="text" placeholder="Поиск блюд" required>
               <button type="submit">
@@ -73,7 +73,27 @@
   </div>
 </header>
   <!-- WRITE CODE HERE -->
-
+  <section class="search" style="background-image: url(img/search-bg.jpg);">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__inner-title">
+          Домашняя еда на расстоянии одного клика
+        </div>
+        <div class="search__inner-form">
+          <form>
+            <input type="text" placeholder="Введите улицу, город, индекс" required>
+              <button type="submit">
+                <img src="img/icons/marker.svg" alt="">
+                <!-- <img src="img/icons/index.svg" alt=""> -->
+              </button>
+          </form>
+        </div>
+        <div class="search__inner-text">
+          Введите ваше местоположение для просмотра меню
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- STOP WRITE CODE -->
   <footer>
