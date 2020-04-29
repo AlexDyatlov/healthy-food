@@ -1,5 +1,5 @@
-@import 'vars';
 @import 'fonts';
+@import 'vars';
 @import 'global';
 //-----------------------------------------------------------------------------------------------------------
 //
@@ -119,6 +119,206 @@
     font-weight: 400;
   }
 }
+.product__item-img{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 185px;
+}
+.products__wrapper{
+  padding: 43px 0 78px;
+}
+.products__select-btn{
+  max-width: 653px;
+  height: 61px;
+  margin: 0 auto 68px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  form{
+    display: flex;
+    }
+    label{
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+    }
+  }
+  .products__form-line{
+    width: 100%;
+    padding-left: 24px;
+    padding-top: 10px;
+    & + .products__form-line {
+      border-left: 1px solid #cccccc;
+    }
+  }
+  
+  .search__foods{
+    position: relative;
+    width: 120px;
+    height: 45px;
+    left: 673px;
+    top: -54px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fca313;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+  }
+.jq-selectbox__select{
+    height: 32px;
+    padding: 0px;
+    border: none;
+    border-bottom-color: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    color: #111111;
+    text-shadow: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    background: transparent;
+    line-height: 24px;
+}
+.jq-selectbox{
+  display: block;
+}
+.jq-selectbox__trigger{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 100%;
+  border-left: none;
+}
+.jq-selectbox__select:hover{
+  background: transparent;
+}
+.jq-selectbox.focused .jq-selectbox__select{
+  border: none;
+}
+.jq-selectbox__dropdown{
+  top: 29px;
+}
+.jq-selectbox__trigger-arrow{
+  border: none;
+  &::before{
+    font-family: 'icomoon';
+    content: "\f0d7";
+    color: #fca313;
+    position: relative;
+    right: 30px;
+    top: -15px;
+  }
+}
+.products__inner-item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  .line{
+    background-image: url(../img/icons/line.jpg);
+    width: 800px;
+    height: 1px;
+    background-position: center;
+    border-radius: 1px;
+    position: relative;
+    top: 12px;
+  }
+  .products__title{
+    font-size: 21px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+  button{
+    background-color: transparent;
+    border: none;
+    color: #fca313;
+    font-weight: 700;
+    cursor: pointer;
+  }
+}
+.products__inner-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.product__item{
+  max-width: 263px;
+  width: 100%;
+  min-height: 349px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  padding: 7px 7px 0;
+  margin-bottom: 29px;
+  &-img{
+    min-height: 185px;
+    max-width: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
+  &-content{
+    padding: 10px 5px;
+    min-height: 105px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+   &-text{
+      font-size: 17px;
+      line-height: 24px;
+      color: #000;
+      font-weight: 400;
+   }
+   &-author{
+     display: flex;
+     align-items: center;
+     padding-top: 14px;
+     .avatar{
+       width: 22px;
+       height: 22px;
+       border-radius: 50%;
+     }
+     span{
+       font-size: 14px;
+       color: #fca313;
+       font-weight: 400;
+       padding-left: 5px;
+     }
+   }
+   &-info{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 53px;
+     padding: 0px 5px;
+   }
+   &-price{
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+   }
+   button{
+    background-color: #fdb813;
+    border-radius: 2px;
+    width: 100px;
+    height: 29px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+   }
+}
+
+
+
 
 
 
