@@ -21,9 +21,9 @@
           </a>
         </div>
         <div class="header__box">
-          <a class="header__login" href="#">Войти</a>
+          <a class="header__login" data-fancybox data-src="#login" href="javascript:;">Войти</a>
           &nbsp/&nbsp
-          <a class="header__register" href="#">Регистрация</a>
+          <a class="header__register" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
             </li>
             <li>
               <a href="#">
-                Закуски
+                Обед
               </a>
             </li>
             <li>
@@ -50,7 +50,7 @@
             </li>
             <li>
               <a href="#">
-                Еда
+                Напитки
               </a>
             </li>
             <li>
@@ -72,6 +72,30 @@
     </div>
   </div>
 </header>
+
+<div id="login">
+  <div class="login__wrapper">
+    <div class="login__title">Авторизация</div>
+    <form>
+      <input type="text" placeholder="Имя пользователя" required>
+      <input type="text" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+      <a class="lost-pass" href="#">Забыли пароль?</a>
+    </form>
+  </div>
+</div>
+
+<div id="registr">
+  <div class="login__wrapper">
+    <div class="login__title">Регистрация</div>
+    <form>
+      <input type="text" placeholder="Имя пользователя" required>
+      <input type="text" placeholder="Пароль" required>
+      <input type="text" placeholder="Email" required>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
   <!-- WRITE CODE HERE -->
   <section class="search" style="background-image: url(img/search-bg.jpg);">
     <div class="container">

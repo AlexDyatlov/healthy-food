@@ -95,6 +95,7 @@ gulp.task("style", function () {
 			"node_modules/normalize.css/normalize.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.css",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css",	
+			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
 		])
 		.pipe(sourcemaps.init())
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
@@ -112,6 +113,7 @@ gulp.task("script", function () {
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
 			"node_modules/mixitup/dist/mixitup.js",
+			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())
