@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <title>DesignCoz</title>
+    <title>Healthy Food</title>
   </head>
 
 <body>
@@ -23,14 +23,20 @@
         <div class="header__box">
           <a class="header__login" data-fancybox data-src="#login" href="javascript:;">Войти</a>
           &nbsp/&nbsp
-          <a class="header__register" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
+          <a class="header__registr" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
         </div>
+        <div class="header__btn-menu icon-user"></div>
       </div>
     </div>
   </div>
   <div class="header__menu">
     <div class="container">
-      <nav class="menu">
+      <nav class="menu menu__mobile">
+        <div class="menu__btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="header__menu-inner">
           <ul class="menu__list">
             <li>
@@ -72,7 +78,6 @@
     </div>
   </div>
 </header>
-
 <div id="login">
   <div class="login__wrapper">
     <div class="login__title">Авторизация</div>
@@ -84,7 +89,6 @@
     </form>
   </div>
 </div>
-
 <div id="registr">
   <div class="login__wrapper">
     <div class="login__title">Регистрация</div>
@@ -92,12 +96,12 @@
       <input type="text" placeholder="Имя пользователя" required>
       <input type="text" placeholder="Пароль" required>
       <input type="text" placeholder="Email" required>
-      <button type="submit">Зарегистрироваться</button>
+      <button class="btn__registr" type="submit">Зарегистрироваться</button>
     </form>
   </div>
 </div>
   <!-- WRITE CODE HERE -->
-  <section class="search" style="background-image: url(img/search-bg.jpg);">
+   <section class="search" style="background-image: url(img/search-bg.jpg);">
     <div class="container">
       <div class="search__inner">
         <div class="search__inner-title">
@@ -108,7 +112,6 @@
             <input type="text" placeholder="Введите улицу, город, индекс" required>
             <button type="submit">
               <img src="img/icons/marker.svg" alt="">
-              <!-- <img src="img/icons/index.svg" alt=""> -->
             </button>
           </form>
         </div>
@@ -172,7 +175,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Сырные вонтоны</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -186,7 +189,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Паста с помидорами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -200,8 +203,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Бутерброд с вареным яйцом</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -214,8 +217,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Чашка молотого кофе</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -228,8 +231,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Пицца пепперони</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -242,8 +245,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Чай с шиповником</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -256,8 +259,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Запеченный омлет с помидорами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -270,7 +273,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -293,7 +296,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Мясо с овощами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -307,8 +310,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Банановый хлеб с черникой</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -321,8 +324,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Кофе с печеньем</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -335,7 +338,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -349,8 +352,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Борщ</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -363,8 +366,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Запеченный омлет с помидорами</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -377,7 +380,7 @@
               <div class="product__item-content">
                 <div class="product__item-text">Овощной салат</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
                   <span>Джон Парсон</span>
                 </a>
               </div>
@@ -391,8 +394,8 @@
               <div class="product__item-content">
                 <div class="product__item-text">Стейк</div>
                 <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/user.jpg);"></div>
-                  <span>Джон Парсон</span>
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
                 </a>
               </div>
               <div class="product__item-info">
@@ -404,7 +407,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> 
   <!-- STOP WRITE CODE -->
   <footer class="footer">
   <div class="footer__content">
@@ -425,7 +428,7 @@
               transform="translate(-70.281 -1673.28)" />
           </svg>
         </div>
-        <div class="footer__col">
+        <div class="footer__col footer__col-info">
           <div class="footer__col-title">
             Бесплатная доставка еды
           </div>
@@ -462,7 +465,7 @@
   <div class="footer__copy">
     <div class="container">
       <div class="footer__copy-inner">
-        <div class="header__logo">
+        <div class="header__logo footer__logo">
           <a href="#">
             <img src="img/logo.png" alt="">
           </a>
@@ -474,7 +477,7 @@
             <li><a class="link-twitter" href="#"></a></li>
           </ul>
           <div class="footer__copy-text">
-            © 2020 Designcoz
+            © 2020 Healthy Food
           </div>
         </div>
       </div>

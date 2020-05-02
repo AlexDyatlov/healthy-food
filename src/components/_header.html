@@ -10,14 +10,20 @@
         <div class="header__box">
           <a class="header__login" data-fancybox data-src="#login" href="javascript:;">Войти</a>
           &nbsp/&nbsp
-          <a class="header__register" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
+          <a class="header__registr" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
         </div>
+        <div class="header__btn-menu icon-user"></div>
       </div>
     </div>
   </div>
   <div class="header__menu">
     <div class="container">
-      <nav class="menu">
+      <nav class="menu menu__mobile">
+        <div class="menu__btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div class="header__menu-inner">
           <ul class="menu__list">
             <li>
@@ -59,7 +65,6 @@
     </div>
   </div>
 </header>
-
 <div id="login">
   <div class="login__wrapper">
     <div class="login__title">Авторизация</div>
@@ -71,7 +76,6 @@
     </form>
   </div>
 </div>
-
 <div id="registr">
   <div class="login__wrapper">
     <div class="login__title">Регистрация</div>
@@ -79,7 +83,7 @@
       <input type="text" placeholder="Имя пользователя" required>
       <input type="text" placeholder="Пароль" required>
       <input type="text" placeholder="Email" required>
-      <button type="submit">Зарегистрироваться</button>
+      <button class="btn__registr" type="submit">Зарегистрироваться</button>
     </form>
   </div>
 </div>
