@@ -5,8 +5,313 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-
-
+   <section class="search" style="background-image: url(img/search-bg.jpg);">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__inner-title">
+          Домашняя еда на расстоянии одного клика
+        </div>
+        <div class="search__inner-form">
+          <form>
+            <input type="text" placeholder="Введите улицу, город, индекс" required>
+            <button type="submit">
+              <img src="img/icons/marker.svg" alt="">
+            </button>
+          </form>
+        </div>
+        <div class="search__inner-text">
+          Введите ваше местоположение для просмотра меню
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="products__wrapper">
+        <div class="products__select-btn">
+          <form>
+            <div class="products__form-line">
+              <label>Время</label>
+              <select>
+                <option>Завтрак</option>
+                <option>Обед</option>
+                <option>Ужин</option>
+                <option>Лёгкий ужин</option>
+              </select>
+            </div>
+            <div class="products__form-line">
+              <label>Кухня</label>
+              <select>
+                <option>Русская</option>
+                <option>Итальянская</option>
+                <option>Французская</option>
+                <option>Ирландская</option>
+              </select>
+            </div>
+            <div class="products__form-line">
+              <label>Меню</label>
+              <select>
+                <option value="button" data-filter=".category-desserts">Десерты</option>
+                <option value="button" data-filter=".category-drinks">Напитки</option>
+                <option value="button" data-filter=".category-breakfast">Завтраки</option>
+                <option value="button" data-filter=".category-dinner">Обеды</option>
+                <option value="button" data-filter=".category-dishes">Блюда</option>
+                <option value="button" data-filter=".category-bake">Выпечка</option>
+                <option value="button" data-filter=".category-combo">Комбо</option>
+              </select>
+            </div>
+          </form>
+          <button class="search__foods" type="button">
+            Найти
+          </button>
+        </div>
+        <div class="products__inner">
+          <div class="products__inner-item">  
+            <div class="products__title">Завтрак</div>
+            <div class="line"></div>
+            <button type="button" data-filter="all">
+              Посмотреть всё
+            </button>
+          </div>
+          <div class="products__inner-box">
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/cheese.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Сырные вонтоны</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/pasta-tomatoes.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Паста с помидорами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">270 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/sandwich-egg.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Бутерброд с вареным яйцом</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/cup-сoffee.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Чашка молотого кофе</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/pepp-pizza.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Пицца пепперони</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">400 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/red-tea.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Чай с шиповником</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">40 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Запеченный омлет с помидорами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">360 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-desserts" data-order="6">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">90 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+          </div>
+          <div class="products__inner-item">  
+            <div class="products__title">Обед</div>
+            <div class="line"></div>
+            <button type="button" data-filter="all">
+              Посмотреть всё
+            </button>
+          </div>
+          <div class="products__inner-box">
+            <div class="product__item mix category-dishes" data-order="7">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/meet.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мясо с овощами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">420 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-combo" data-order="8">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/bread-blueberry.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Банановый хлеб с черникой</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">130 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/coffee-cookies.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Кофе с печеньем</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">60 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-desserts" data-order="6">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dinner" data-order="5">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/borscht-soup.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Борщ</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">170 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Запеченный омлет с помидорами</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
+                  <span>Рита Уэйн</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">360 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dinner" data-order="5">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/vegetable-salad.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Овощной салат</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
+                  <span>Джон Парсон</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">380 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dishes" data-order="7">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/steak.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Стейк</div>
+                <a class="product__item-author" href="#">
+                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
+                  <span>Мартин Смит</span>
+                </a>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">150 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
   <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')
   @@include('components/_scripts.html')
