@@ -5,12 +5,12 @@
 <body>
   @@include('components/_header.html')
   <!-- WRITE CODE HERE -->
-   <section class="search" style="background-image: url(img/search-bg.jpg);">
+  <section class="search" style="background-image: url(img/search-bg.jpg);">
     <div class="container">
       <div class="search__inner">
-        <div class="search__inner-title">
+        <h1 class="search__inner-title">
           Домашняя еда на расстоянии одного клика
-        </div>
+        </h1>
         <div class="search__inner-form">
           <form>
             <input type="text" placeholder="Введите улицу, город, индекс" required>
@@ -66,7 +66,7 @@
           </button>
         </div>
         <div class="products__inner">
-          <div class="products__inner-item">  
+          <div class="products__inner-item">
             <div class="products__title">Завтрак</div>
             <div class="line"></div>
             <button type="button" data-filter="all">
@@ -78,10 +78,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/cheese.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Сырные вонтоны</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-description">
+                  Хрустящее тонкое тесто, внутри которого находится мягкий сыр.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">120 руб.</div>
@@ -92,10 +91,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/pasta-tomatoes.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Паста с помидорами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-description">
+                  Лёгкий салат из спелых сочных томатов и свежего базилика.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">270 руб.</div>
@@ -106,10 +104,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/sandwich-egg.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Бутерброд с вареным яйцом</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
-                  <span>Мартин Смит</span>
-                </a>
+                <div class="product__item-description">
+                  Вкусные, сытные горячие бутерброды запеченные в духовке.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">120 руб.</div>
@@ -120,10 +117,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/cup-сoffee.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Чашка молотого кофе</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Натуральный молотый кофе является самым популярным безалкогольным напитком.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">120 руб.</div>
@@ -134,10 +130,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/pepp-pizza.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Пицца пепперони</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Пицца «Пепперони» создана для настоящих любителей острых ощущений.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">400 руб.</div>
@@ -148,10 +143,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/red-tea.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Чай с шиповником</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Вкусный и ароматный чай из шиповника - необыкновенно полезный.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">40 руб.</div>
@@ -162,10 +156,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Запеченный омлет с помидорами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Яркий, вкусный и сытный омлет с помидорами.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">360 руб.</div>
@@ -173,13 +166,13 @@
               </div>
             </div>
             <div class="product__item mix category-desserts" data-order="6">
-              <a class="product__item-img" href="#" style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <a class="product__item-img" href="#"
+                style="background-image: url(img/content/crackling-fruits.jpg);"></a>
               <div class="product__item-content">
-                <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-text">Мороженое с сухофруктами</div>
+                <div class="product__item-description">
+                  Вкусное хрустящее мороженое, понравится любителям сухофруктов.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">90 руб.</div>
@@ -187,7 +180,7 @@
               </div>
             </div>
           </div>
-          <div class="products__inner-item">  
+          <div class="products__inner-item">
             <div class="products__title">Обед</div>
             <div class="line"></div>
             <button type="button" data-filter="all">
@@ -199,10 +192,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/meet.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Мясо с овощами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-description">
+                  Сочное жареное мясо с овощами в соевом соусе.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">420 руб.</div>
@@ -213,10 +205,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/bread-blueberry.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Банановый хлеб с черникой</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Банановый хлеб прекрасно подходит для питательного завтрака и перекуса.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">130 руб.</div>
@@ -227,10 +218,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/coffee-cookies.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Кофе с печеньем</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Французский горячий кофейный напиток с молоком и печеньем.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">60 руб.</div>
@@ -238,13 +228,13 @@
               </div>
             </div>
             <div class="product__item mix category-desserts" data-order="6">
-              <a class="product__item-img" href="#" style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <a class="product__item-img" href="#"
+                style="background-image: url(img/content/crackling-fruits.jpg);"></a>
               <div class="product__item-content">
-                <div class="product__item-text">Мороженое с хрустящими сухофруктами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-text">Мороженое с сухофруктами</div>
+                <div class="product__item-description">
+                  Вкусное хрустящее мороженое, понравится любителям сухофруктов.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">120 руб.</div>
@@ -255,10 +245,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/borscht-soup.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Борщ</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
-                  <span>Мартин Смит</span>
-                </a>
+                <div class="product__item-description">
+                  Традиционное первое блюдо славянских народов.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">170 руб.</div>
@@ -269,10 +258,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Запеченный омлет с помидорами</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-2.jpg);"></div>
-                  <span>Рита Уэйн</span>
-                </a>
+                <div class="product__item-description">
+                  Яркий, вкусный и сытный омлет с помидорами.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">360 руб.</div>
@@ -283,10 +271,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/vegetable-salad.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Овощной салат</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-1.jpg);"></div>
-                  <span>Джон Парсон</span>
-                </a>
+                <div class="product__item-description">
+                  Легкий овощной салат из помидоров, зелени и грудки, невероятно полезный.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">380 руб.</div>
@@ -297,10 +284,9 @@
               <a class="product__item-img" href="#" style="background-image: url(img/content/steak.jpg);"></a>
               <div class="product__item-content">
                 <div class="product__item-text">Стейк</div>
-                <a class="product__item-author" href="#">
-                  <div class="avatar" style="background-image: url(img/content/team-3.jpg);"></div>
-                  <span>Мартин Смит</span>
-                </a>
+                <div class="product__item-description">
+                  Толстый кусок обжаренного мяса из лучших частей говядины.
+                </div>
               </div>
               <div class="product__item-info">
                 <div class="product__item-price">150 руб.</div>
@@ -311,7 +297,10 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
+
+
+ 
   <!-- STOP WRITE CODE -->
   @@include('components/_footer.html')
   @@include('components/_scripts.html')

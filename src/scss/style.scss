@@ -1,11 +1,7 @@
 @import 'fonts';
 @import 'vars';
 @import 'global';
-//-----------------------------------------------------------------------------------------------------------
-//
-//                                                    START CODE
-//
-//-----------------------------------------------------------------------------------------------------------
+
 //start header
 .header__top{
   height: 75px;
@@ -20,7 +16,7 @@
 }
 .header__logo{
   img{
-    width: 145px;
+    width: 115px;
     height: 45px;
   }
 }
@@ -36,7 +32,7 @@
   align-items: center;
 }
 .header__menu-inner a:hover{
-  color: #fdb813;
+  color: $orange;
 }
 .menu__list{
   li{
@@ -81,11 +77,12 @@
 .menu__btn{
   display: none;
 }
-//end header
-//start modal
+// end header
+
+// start modal
 #login,
 #registr{
-  background-color: #f5f5f5;
+  background-color: $background;
   max-width: 700px;
   width: 100%;
   padding: 70px;
@@ -95,7 +92,6 @@
   text-align: center;
   font-size: 24px;
   margin-bottom: 25px;
-  color: #000;
   font-weight: 700;
 }
 .login__wrapper{
@@ -120,7 +116,7 @@
   button{
     margin-top: 10px;
     padding: 13px 14px;
-    background-color: #fdb813;
+    background-color: $orange;
     border: none;
     width: 100%;
     color: #fff;
@@ -130,13 +126,13 @@
   }
 }
 .lost-pass{
-  color: #000;
   display: block;
   margin-top: 20px;
+  color: #000;
 }
-//end modal
+// end modal
 
-//start search
+// start search
 .search{
   background-repeat: no-repeat;
   background-size: cover;
@@ -150,8 +146,7 @@
     margin-bottom: 35px;
     font-size: 47px;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    @include f400;
     line-height: 62px;
   }
   &-form{
@@ -210,7 +205,6 @@
     label{
       font-size: 16px;
       font-weight: 400;
-      color: #000;
     }
   }
   .products__form-line{
@@ -221,7 +215,6 @@
       border-left: 1px solid #cccccc;
     }
   }
-  
   .search__foods{
     position: relative;
     padding: 15px 19px;
@@ -229,11 +222,14 @@
     top: -54px;
     border-radius: 5px;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
-    background-color: #fca313;
+    background-color: $color-text;
     border: none;
     cursor: pointer;
     color: #fff;
     font-weight: 600;
+    &:hover{
+      font-style: italic;
+    }
   }
 .jq-selectbox__select{
     height: 32px;
@@ -246,8 +242,7 @@
     color: #111111;
     text-shadow: none;
     outline: none;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    @include f300;
     font-size: 18px;
     background: transparent;
     line-height: 24px;
@@ -277,7 +272,7 @@
   &::before{
     font-family: 'icomoon';
     content: "\f0d7";
-    color: #fca313;
+    color: $color-text;
     position: relative;
     right: 30px;
     top: -15px;
@@ -300,13 +295,12 @@
     margin-right: 15px;
     font-size: 21px;
     font-weight: 700;
-    color: #000;
     text-transform: uppercase;
   }
   button{
     background-color: transparent;
     border: none;
-    color: #fca313;
+    color: $color-text;
     font-weight: 700;
     cursor: pointer;
     margin-left: 10px;
@@ -338,30 +332,17 @@
   }
   &-content{
     padding: 10px 5px;
-    min-height: 105px;
+    min-height: 115px;
     border-bottom: 1px solid #d7d7d7;
   }
    &-text{
       font-size: 17px;
       line-height: 24px;
-      color: #000;
       font-weight: 400;
    }
-   &-author{
-     display: flex;
-     align-items: center;
-     padding-top: 14px;
-     .avatar{
-       width: 22px;
-       height: 22px;
-       border-radius: 50%;
-     }
-     span{
-       font-size: 14px;
-       color: #fca313;
-       font-weight: 400;
-       padding-left: 5px;
-     }
+   &-description{
+     font-size: 16px;
+     line-height: 22px;
    }
    &-info{
      display: flex;
@@ -373,13 +354,11 @@
    &-price{
     font-size: 20px;
     font-weight: 600;
-    color: #000;
    }
    button{
-    background-color: #fdb813;
+    background-color: $orange;
     border-radius: 2px;
-    width: 100px;
-    height: 29px;
+    padding: 8px 15px;
     border: none;
     color: #fff;
     font-weight: 600;
@@ -424,7 +403,7 @@
   }
   .footer__info{
     font-size: 16px;
-    color: #fca313;
+    color: $color-text;
   }
 }
 .footer__col-list{
@@ -467,23 +446,14 @@
   &::before{
     content: "\f082";
     color: #fff;
-    padding-left: 30px;
   }
 }
 .link-twitter{
   &::before{
     content: "\f081";
     color: #fff;
-    padding-left: 30px;
   }
 }
-//end footer
-
-
-//-----------------------------------------------------------------------------------------------------------
-//
-//                                                    END CODE
-//
-//-----------------------------------------------------------------------------------------------------------
+// end footer
 
 @import 'media';
