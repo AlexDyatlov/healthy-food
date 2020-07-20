@@ -31,9 +31,6 @@
   height: 60px;
   align-items: center;
 }
-.header__menu-inner a:hover{
-  color: $orange;
-}
 .menu__list{
   li{
     display: inline-block;
@@ -44,6 +41,9 @@
   a{
     color: #222222;
     font-weight: 400;
+    &:hover,&:focus{
+      color: $orange;
+    }
   }
 }
 .header__form{

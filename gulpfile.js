@@ -113,7 +113,8 @@ gulp.task("script", function () {
 			"node_modules/jquery/dist/jquery.js",
 			"node_modules/jquery-form-styler/dist/jquery.formstyler.js",
 			"node_modules/mixitup/dist/mixitup.js",
-			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js"
+			"node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js",
+			"node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js",
 		])
 		.pipe(size())
 		.pipe(sourcemaps.init())
