@@ -134,9 +134,7 @@
 
 // start search
 .search{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat;
   min-height: 331px;
 }
 .search__inner{
@@ -183,9 +181,7 @@
   }
 }
 .product__item-img{
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat;
   min-height: 185px;
 }
 .products__wrapper{
@@ -325,10 +321,8 @@
   &-img{
     min-height: 185px;
     width: 100%;
-    background-repeat: no-repeat;
     display: block;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat;
   }
   &-content{
     padding: 10px 5px;
