@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Healthy Food</title>
+  </head>
+
+<body>
+  <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="header__box">
+          <a class="header__login" data-fancybox data-src="#login" href="javascript:;">Войти</a>
+          &nbsp/&nbsp
+          <a class="header__registr" data-fancybox data-src="#registr" href="javascript:;">Регистрация</a>
+        </div>
+        <div class="header__btn-menu icon-user"></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="container">
+      <nav class="menu menu__mobile">
+        <div class="menu__btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <p class="menu">Меню</p>
+          <p class="close">Назад</p>
+        </div>
+        <div class="header__menu-inner">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#breakfast">
+                Завтрак
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#lunch">
+                Обед
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#lunch">
+                Комбо
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#breakfast">
+                Напитки
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#breakfast">
+                Десерты
+              </a>
+            </li>
+          </ul>
+          <div class="header__form">
+            <form>
+              <input type="text" placeholder="Поиск блюд" required>
+              <button type="submit">
+                <img src="img/icons/search.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<div id="login">
+  <div class="login__wrapper">
+    <div class="login__title">Авторизация</div>
+    <form>
+      <input type="text" placeholder="Имя пользователя" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+      <a class="lost-pass" href="#">Забыли пароль?</a>
+    </form>
+  </div>
+</div>
+<div id="registr">
+  <div class="login__wrapper">
+    <div class="login__title">Регистрация</div>
+    <form>
+      <input type="text" placeholder="Имя пользователя" required>
+      <input type="password" placeholder="Пароль" required>
+      <input type="email" placeholder="Email" required>
+      <button class="btn__registr" type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+  <!-- WRITE CODE HERE -->
+  <section class="preloader" id="preloader"> 
+    <div class="pan-loader">
+      <div class="loader"></div>
+      <div class="pan-container">
+        <div class="pan"></div>
+        <div class="handle"></div>
+      </div>
+      <div class="shadow"></div>
+    </div>
+  </section>
+  <section class="search" style="background-image: url(img/search-bg.jpg);">
+    <div class="container">
+      <div class="search__inner">
+        <h1 class="search__inner-title">
+          Домашняя еда на расстоянии одного клика
+        </h1>
+        <div class="search__inner-form">
+          <form>
+            <input type="text" placeholder="Введите улицу, город, индекс" required>
+            <button type="submit">
+              <img src="img/icons/marker.svg" alt="">
+            </button>
+          </form>
+        </div>
+        <div class="search__inner-text">
+          Введите ваше местоположение для просмотра меню
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="products__wrapper">
+        <div class="products__select-btn">
+          <form>
+            <div class="products__form-line">
+              <label>Время</label>
+              <select>
+                <option>Завтрак</option>
+                <option>Обед</option>
+                <option>Ужин</option>
+                <option>Лёгкий ужин</option>
+              </select>
+            </div>
+            <div class="products__form-line">
+              <label>Кухня</label>
+              <select>
+                <option>Русская</option>
+                <option>Итальянская</option>
+                <option>Французская</option>
+                <option>Ирландская</option>
+              </select>
+            </div>
+            <div class="products__form-line">
+              <label>Меню</label>
+              <select>
+                <option value="button" data-filter=".category-desserts">Десерты</option>
+                <option value="button" data-filter=".category-drinks">Напитки</option>
+                <option value="button" data-filter=".category-breakfast">Завтраки</option>
+                <option value="button" data-filter=".category-dinner">Обеды</option>
+                <option value="button" data-filter=".category-dishes">Блюда</option>
+                <option value="button" data-filter=".category-bake">Выпечка</option>
+                <option value="button" data-filter=".category-combo">Комбо</option>
+              </select>
+            </div>
+          </form>
+          <button class="search__foods" type="button">
+            Найти
+          </button>
+        </div>
+        <div class="products__inner">
+          <div id="breakfast" class="products__inner-item">
+            <div class="products__title">Завтрак</div>
+            <div class="line"></div>
+            <button type="button" data-filter="all">
+              Посмотреть всё
+            </button>
+          </div>
+          <div class="products__inner-box">
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/cheese.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Сырные вонтоны</div>
+                <div class="product__item-description">
+                  Хрустящее тонкое тесто, внутри которого находится мягкий сыр.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/pasta-tomatoes.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Паста с помидорами</div>
+                <div class="product__item-description">
+                  Лёгкий салат из спелых сочных томатов и свежего базилика.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">270 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-breakfast" data-order="1">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/sandwich-egg.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Бутерброд с вареным яйцом</div>
+                <div class="product__item-description">
+                  Вкусные, сытные горячие бутерброды запеченные в духовке.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/cup-сoffee.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Чашка молотого кофе</div>
+                <div class="product__item-description">
+                  Натуральный молотый кофе является самым популярным безалкогольным напитком.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/pepp-pizza.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Пицца пепперони</div>
+                <div class="product__item-description">
+                  Пицца «Пепперони» создана для настоящих любителей острых ощущений.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">400 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/red-tea.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Чай с шиповником</div>
+                <div class="product__item-description">
+                  Вкусный и ароматный чай из шиповника - необыкновенно полезный.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">40 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Запеченный омлет с помидорами</div>
+                <div class="product__item-description">
+                  Яркий, вкусный и сытный омлет с помидорами.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">360 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-desserts" data-order="6">
+              <a class="product__item-img" href="#"
+                style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мороженое с сухофруктами</div>
+                <div class="product__item-description">
+                  Вкусное хрустящее мороженое, понравится любителям сухофруктов.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">90 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+          </div>
+          <div id="lunch" class="products__inner-item">
+            <div class="products__title">Обед</div>
+            <div class="line"></div>
+            <button type="button" data-filter="all">
+              Посмотреть всё
+            </button>
+          </div>
+          <div class="products__inner-box">
+            <div class="product__item mix category-dishes" data-order="7">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/meet.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мясо с овощами</div>
+                <div class="product__item-description">
+                  Сочное жареное мясо с овощами в соевом соусе.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">420 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-combo" data-order="8">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/bread-blueberry.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Банановый хлеб с черникой</div>
+                <div class="product__item-description">
+                  Банановый хлеб прекрасно подходит для питательного завтрака и перекуса.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">130 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-drinks" data-order="2">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/coffee-cookies.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Кофе с печеньем</div>
+                <div class="product__item-description">
+                  Французский горячий кофейный напиток с молоком и печеньем.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">60 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-desserts" data-order="6">
+              <a class="product__item-img" href="#"
+                style="background-image: url(img/content/crackling-fruits.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Мороженое с сухофруктами</div>
+                <div class="product__item-description">
+                  Вкусное хрустящее мороженое, понравится любителям сухофруктов.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">120 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dinner" data-order="5">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/borscht-soup.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Борщ</div>
+                <div class="product__item-description">
+                  Традиционное первое блюдо славянских народов.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">170 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-bake" data-order="3">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/omelette.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Запеченный омлет с помидорами</div>
+                <div class="product__item-description">
+                  Яркий, вкусный и сытный омлет с помидорами.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">360 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dinner" data-order="5">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/vegetable-salad.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Овощной салат</div>
+                <div class="product__item-description">
+                  Легкий овощной салат из помидоров, зелени и грудки, невероятно полезный.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">380 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+            <div class="product__item mix category-dishes" data-order="7">
+              <a class="product__item-img" href="#" style="background-image: url(img/content/steak.jpg);"></a>
+              <div class="product__item-content">
+                <div class="product__item-text">Стейк</div>
+                <div class="product__item-description">
+                  Толстый кусок обжаренного мяса из лучших частей говядины.
+                </div>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-price">150 руб.</div>
+                <button type="button">Добавить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <!-- STOP WRITE CODE -->
+  <footer class="footer">
+  <div class="footer__content">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__col-rhombus">
+          <svg xmlns="http://www.w3.org/2000/svg" width="141.438" height="141.44" viewBox="0 0 141.438 141.44">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fca313;
+                  fill-rule: evenodd;
+                }
+              </style>
+            </defs>
+            <path class="cls-1"
+              d="M141,1673.29L211.711,1744,141,1814.71,70.289,1744Zm-10.472,49.79a6.7,6.7,0,0,0-11.246,0,12.239,12.239,0,0,0,0,13.95,7.893,7.893,0,0,0,2.886,2.43l-1.652,24.83a4.4,4.4,0,1,0,8.777,0l-1.651-24.83a7.893,7.893,0,0,0,2.886-2.43A12.239,12.239,0,0,0,130.528,1723.08Zm-4.052,42.97a2.152,2.152,0,0,1-3.719-1.61l1.621-24.38a4.635,4.635,0,0,0,1.053,0l1.621,24.38A2.123,2.123,0,0,1,126.476,1766.05Zm-1.571-28.21a3.858,3.858,0,0,1-1.173-.18l-0.1-.03c-2.455-.8-4.29-3.89-4.29-7.58,0-4.29,2.494-7.78,5.559-7.78s5.559,3.49,5.559,7.78S127.97,1737.84,124.905,1737.84Zm41,11.43v-27.98h-0.01a1.094,1.094,0,0,0-.158-0.73,1.127,1.127,0,0,0-1.545-.37,15.333,15.333,0,0,0-7.317,13.12h0v14.71a2.386,2.386,0,0,0,2.311,2.38v15.2a3.36,3.36,0,1,0,6.719,0v-16.33Zm-6.646-1.11a0.143,0.143,0,0,1-.138-0.14v-14.71a13.076,13.076,0,0,1,4.538-9.95v24.8h-4.4Zm4.4,17.44a1.114,1.114,0,0,1-2.227,0v-15.2h2.227v15.2h0Zm-14.811-45.58a1.129,1.129,0,0,0-1.123,1.13v12.75H144.86v-12.75a1.123,1.123,0,1,0-2.245,0v12.75h-2.861v-12.75a1.123,1.123,0,1,0-2.246,0v16.25a3.324,3.324,0,0,0,3.319,3.32h0.2l-1.575,23.68a4.294,4.294,0,1,0,8.571,0l-1.576-23.68h0.2a3.324,3.324,0,0,0,3.319-3.32v-16.25A1.129,1.129,0,0,0,148.844,1720.02Zm-3.61,46.06a2.049,2.049,0,0,1-3.542-1.53l1.585-23.83h0.92l1.585,23.83A2.019,2.019,0,0,1,145.234,1766.08Zm2.487-28.68a1.073,1.073,0,0,1-1.074,1.07h-5.82a1.072,1.072,0,0,1-1.073-1.07v-1.25h7.967v1.25Z"
+              transform="translate(-70.281 -1673.28)" />
+          </svg>
+        </div>
+        <div class="footer__col footer__col-info">
+          <div class="footer__col-title">
+            Бесплатная доставка еды
+          </div>
+          <div class="footer__col-text">
+            Испытайте нашу сверхбыструю доставку еды, доставленная свежей и вовремя!
+          </div>
+          <a class="footer__info" href="#">
+            Узнать больше
+          </a>
+        </div>
+        <div class="footer__col footer__col-menu">
+          <div class="footer__col-title">
+            Компания
+          </div>
+          <ul class="footer__col-list">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Партнерство с нами</a></li>
+            <li><a href="#">Команда</a></li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col-menu">
+          <div class="footer__col-title">
+            Поддержка
+          </div>
+          <ul class="footer__col-list">
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Форумы</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy">
+    <div class="container">
+      <div class="footer__copy-inner">
+        <div class="header__logo footer__logo">
+          <a href="#">
+            <img src="img/logo.png" alt="">
+          </a>
+        </div>
+        <div class="footer__copy-contacts">
+          <ul class="footer__social-link">
+            <li><a class="link-instagram" href="#"></a></li>
+            <li><a class="link-facebook" href="#"></a></li>
+            <li><a class="link-twitter" href="#"></a></li>
+          </ul>
+          <div class="footer__copy-text">
+            © 2020 Healthy Food
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+  <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
